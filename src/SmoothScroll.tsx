@@ -14,10 +14,20 @@ const SmoothScroll = () => {
       el: container,
       smooth: true,
       smartphone: { smooth: true },
-      //tablet: { smooth: true },
+      tablet: { smooth: true },
+      multiplier: 1,
+      lerp: 0.1,
     });
 
+    // Update scroll on window resize
+    const handleResize = () => {
+      scroll.update();
+    };
+
+    window.addEventListener('resize', handleResize);
+
     return () => {
+      window.removeEventListener('resize', handleResize);
       scroll.destroy();
     };
   }, []);
