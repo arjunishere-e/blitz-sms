@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #0b0b0b;
+  background-color: #000000;
+  color: #ffffff;
   overflow-x: hidden;
   display: block !important;
   place-items: unset !important;
@@ -63,7 +63,7 @@ body,
 }
 
 .scroll-container {
-  background: #ffffff;
+  background: #000000;
 }
 
 @media (max-width: 768px) {
