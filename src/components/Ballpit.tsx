@@ -668,6 +668,8 @@ function processPointerInteraction() {
   }
 }
 
+// Touch event handlers disabled to fix mobile tap blocking
+/* 
 function onTouchStart(e: TouchEvent) {
   if (e.touches.length > 0) {
     e.preventDefault();
@@ -719,6 +721,7 @@ function onTouchEnd() {
     }
   }
 }
+*/
 
 function onPointerClick(e: PointerEvent) {
   pointerPosition.set(e.clientX, e.clientY);
