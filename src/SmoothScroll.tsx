@@ -14,7 +14,7 @@ const SmoothScroll = () => {
       el: container,
       smooth: true,
       smartphone: { smooth: true },
-      tablet: { smooth: true },
+      tablet: { smooth: true, breakpoint: 768 },
       multiplier: 1,
       lerp: 0.1,
     });
