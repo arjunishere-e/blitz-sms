@@ -13,8 +13,8 @@ const SmoothScroll = () => {
     const scroll = new LocomotiveScroll({
       el: container,
       smooth: true,
-      smartphone: { smooth: true },
-      tablet: { smooth: true, breakpoint: 768 },
+      smartphone: { smooth: false },
+      tablet: { smooth: false },
       multiplier: 1,
       lerp: 0.1,
     });
